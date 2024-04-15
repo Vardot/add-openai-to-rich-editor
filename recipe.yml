@@ -1,0 +1,15 @@
+name: Add OpenAI to Rich Editor
+description: A recipe to manage default OpenAI button and plugin settings for the Rich Editor with CKEditor 5
+type: optional
+config:
+  actions:
+    editor.editor.full_html:
+      add_button_to_toolbar:
+        button_name: openai
+        plugin_name: openai_ckeditor_openai
+        plugin_settings:
+          completion:
+            enabled: true
+            model: gpt-4
+            temperature: 0.2
+            max_tokens: 512
